@@ -74,7 +74,7 @@ IP Whitelist:
 const MONGODB_URI = process.env.MONGODB_URI;
 
 // ❌ Bad - Hardcoded credentials
-const MONGODB_URI = 'mongodb+srv://user:pass@cluster.mongodb.net/db';
+const MONGODB_URI = 'mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/db';
 ```
 
 #### **Git Ignore:**
