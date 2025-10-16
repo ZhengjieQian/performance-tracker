@@ -37,8 +37,10 @@ Create a `.env` file in the backend directory:
 ```env
 PORT=5000
 NODE_ENV=development
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/performance-tracker
+MONGODB_URI=your-mongodb-connection-string-here
 ```
+
+**⚠️ Security Warning**: Never commit real credentials to Git! Use environment variables.
 
 ### 4. Start the Server
 ```bash

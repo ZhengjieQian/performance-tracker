@@ -21,10 +21,12 @@ npm run install-all
 3. Get your connection string
 4. Create `.env` file in `backend/` directory:
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/performance-tracker
+MONGODB_URI=your-mongodb-connection-string-here
 PORT=5000
 NODE_ENV=development
 ```
+
+**⚠️ Security Note**: Never commit real credentials to Git! Use environment variables.
 
 #### Option B: Local MongoDB
 1. Install MongoDB locally
@@ -35,6 +37,8 @@ MONGODB_URI=mongodb://localhost:27017/performance-tracker
 PORT=5000
 NODE_ENV=development
 ```
+
+**⚠️ Security Note**: Use local MongoDB for development, cloud MongoDB for production.
 
 ### 3. Seed Database (Optional)
 ```bash
