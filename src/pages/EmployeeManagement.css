@@ -95,6 +95,50 @@
   color: #721c24;
 }
 
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #721c24;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #f8f9fa;
+}
+
 @media (max-width: 768px) {
   .employee-stats {
     grid-template-columns: 1fr;
@@ -111,5 +155,10 @@
   
   th, td {
     padding: 10px 8px;
+  }
+  
+  .table-header {
+    flex-direction: column;
+    gap: 10px;
   }
 }

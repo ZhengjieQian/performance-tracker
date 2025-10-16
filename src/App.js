@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
+import Chatbot from './components/Chatbot';
 import Dashboard from './pages/Dashboard';
 import PerformanceRecords from './pages/PerformanceRecords';
 import Analytics from './pages/Analytics';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/employees" element={<EmployeeManagement />} />
           </Routes>
         </div>
+        <Chatbot />
       </div>
     </Router>
   );

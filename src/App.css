@@ -6,14 +6,22 @@
 .main-content {
   flex: 1;
   margin-left: 250px;
+  margin-right: 350px;
   padding: 20px;
   background-color: #ffffff;
   min-height: 100vh;
 }
 
+@media (max-width: 1200px) {
+  .main-content {
+    margin-right: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
+    margin-right: 0;
     padding: 15px;
   }
 }
